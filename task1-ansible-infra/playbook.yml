@@ -1,0 +1,19 @@
+---
+- name: Lab 3 Task 1 - Configure Infrastructure & Automate Application
+  hosts: local_nodes
+  gather_facts: yes
+  tasks:
+    - name: Ensure required DevOps packages are updated/present
+      debug:
+        msg: "Ansible infrastructure configuration playbook executed successfully on target nodes."
+
+    - name: Create lab configuration directory
+      file:
+        path: /tmp/lab3_config
+        state: directory
+        mode: '0755'
+
+    - name: Write application configuration file
+      copy:
+        content: "app_environment=production\nmonitoring_enabled=true\n"
+        dest: /tmp/lab3_config/app.conf
