@@ -1,0 +1,8 @@
+{
+  "@timestamp": "2026-11-18T14:15:05.815395",
+  "scanner": "DevSecOps-Pipeline-Scanner-v1.0",
+  "target": "krishaggarwal/LAB-3-DEVOPS",
+  "sast_check": "Bandit passed with 0 high-severity issues",
+  "dependency_check": "Safety vulnerability scan completed successfully",
+  "status": "SECURE_PASSED"
+}

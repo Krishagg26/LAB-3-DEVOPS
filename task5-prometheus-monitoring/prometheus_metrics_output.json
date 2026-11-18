@@ -1,0 +1,9 @@
+{
+  "@timestamp": "2026-11-18T14:26:10.253275",
+  "system": "Lab-3-Monitoring-System",
+  "prometheus_target": "localhost:9090",
+  "grafana_target": "localhost:3000",
+  "status": "METRICS_SCRAPING_ACTIVE",
+  "active_targets": 2,
+  "metric_sample": "http_requests_total{method=\"GET\",handler=\"/health\"} 1425"
+}
